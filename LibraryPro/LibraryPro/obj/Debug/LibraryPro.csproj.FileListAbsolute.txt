@@ -38,3 +38,10 @@ C:\Users\stech\Desktop\LibraryPro\LibraryPro\bin\DBLibraryPro.pdb
 C:\Users\stech\Desktop\LibraryPro\LibraryPro\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\stech\Desktop\LibraryPro\LibraryPro\obj\Debug\LibraryPro.dll
 C:\Users\stech\Desktop\LibraryPro\LibraryPro\obj\Debug\LibraryPro.pdb
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\LibraryPro\bin\LibraryPro.dll
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\LibraryPro\bin\LibraryPro.pdb
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\LibraryPro\bin\DBLibraryPro.dll
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\LibraryPro\bin\DBLibraryPro.pdb
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\LibraryPro\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\LibraryPro\obj\Debug\LibraryPro.dll
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\LibraryPro\obj\Debug\LibraryPro.pdb

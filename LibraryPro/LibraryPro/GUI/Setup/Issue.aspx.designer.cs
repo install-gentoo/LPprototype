@@ -31,13 +31,13 @@ namespace LibraryPro.GUI.Setup {
         protected global::System.Web.UI.WebControls.TextBox txtIssueCode;
         
         /// <summary>
-        /// RequiredFiledValidator2 control.
+        /// RequiredFieldValidator0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFiledValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator0;
         
         /// <summary>
         /// ddlMemberCardCode control.

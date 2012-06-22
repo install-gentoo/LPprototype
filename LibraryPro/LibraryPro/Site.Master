@@ -115,6 +115,7 @@
                                 <a href="#">Cataloging</a></h3>
                             <div>
                                 <ul>
+                                    <li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/GUI/Setup/Issue.aspx?act=list">Issue Book</asp:HyperLink></li>
                                     <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/GUI/Setup/Book.aspx?act=list">Manage Book</asp:HyperLink></li>
                                     <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/GUI/Setup/BookLot.aspx?act=list">Manage Book Lot</asp:HyperLink></li>
                                 </ul>

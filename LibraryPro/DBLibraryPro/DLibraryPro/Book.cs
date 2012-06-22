@@ -91,7 +91,7 @@ on M_BOOK_SOURCE.SOURCE_TYPE_CODE=M_BOOK_LOT.SOURCE_TYPE_CODE
         {
             DataAccess da = new DataAccess();
 
-            string sql = @"SELECT BOOK_SN,BOOK_CODE FROM M_BOOK_INVENTORY";
+            string sql = @"SELECT BOOK_CODE, BOOK_SN FROM M_BOOK_INVENTORY";
 
             return da.ExecuteDataTable(sql, CommandType.Text);
         }
@@ -123,6 +123,7 @@ on M_BOOK_SOURCE.SOURCE_TYPE_CODE=M_BOOK_LOT.SOURCE_TYPE_CODE
         {
 
             DataAccess da = new DataAccess();
+            da.ExecuteNonQuery(sql, CommandType.Text);
             return "Updated successfully to Database";
         }
     }

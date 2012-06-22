@@ -20,7 +20,7 @@ namespace LibraryPro.GUI.Setup
                 DataTable dtmcc = BLibraryPro.Member.GetMemberCardCodes("");
                 ddlMemberCardCode.DataSource = dtmcc;
                 ddlMemberCardCode.DataTextField="MEMBER_CARD_CODE";
-                ddlMemberCardCode.DataValueField = "MEMBER_CODE";
+                ddlMemberCardCode.DataValueField = "MEMBER_CARD_CODE";
                 ddlMemberCardCode.DataBind();
                 ddlMemberCardCode.Items.Insert(0, new ListItem("Please select a Member Card Code"));
                 ddlMemberCardCode.SelectedValue = "0";
@@ -29,7 +29,7 @@ namespace LibraryPro.GUI.Setup
                 DataTable dtbsn = BLibraryPro.Book.GetBookSN("");
                 ddlBookSN.DataSource = dtbsn;
                 ddlBookSN.DataTextField = "BOOK_SN";
-                ddlBookSN.DataTextField = "BOOK_CODE";
+                ddlBookSN.DataValueField = "BOOK_SN";
                 ddlBookSN.DataBind();
                 ddlBookSN.Items.Insert(0,new ListItem("Please select a Book Serial Number"));
                 ddlBookSN.SelectedValue = "0";
@@ -42,9 +42,11 @@ namespace LibraryPro.GUI.Setup
         protected void btnIssueSubmit_Click(object sender, EventArgs e)
         {
             BLibraryPro.Book BLPBook = new BLibraryPro.Book();
-            string sql = string.Format(@"INSERT INTO T_ISSUE VALUES ('"+txtIssueCode.Text+@"','"+ddlMemberCardCode.SelectedValue+@"','"+ddlBookSN.SelectedValue+@"','"+txtIB.Text+@"',to_date("+Convert.ToDateTime(txtDate.Text).ToShortDateString()+@"),to_date("+Convert.ToDateTime(txtDueDate.Text).ToShortDateString())+@"),'"+ddlReturned.SelectedValue.Substring(0,1)+@"','"+ddlLost.SelectedValue.Substring(0,1)+@"',to_date("+Convert.ToDateTime(txtReturnedDate).ToShortDateString()+@"),'"+txtReturnedBy.Text+","+Convert.ToInt32(txtFineAmount+@")");
+
+            string sql = string.Format(@"INSERT INTO T_ISSUE VALUES ('"+txtIssueCode.Text+@"','"+ddlMemberCardCode.SelectedValue+@"','"+ddlBookSN.SelectedValue+@"','"+txtIB.Text+@"',to_date('"+Convert.ToDateTime(txtDate.Text).ToShortDateString()+@"','MM/dd/yyyy'),to_date('"+Convert.ToDateTime(txtDueDate.Text).ToShortDateString()+@"','MM/dd/yyyy'),'"+ddlReturned.SelectedValue.Substring(0,1)+@"','"+ddlLost.SelectedValue.Substring(0,1)+@"',to_date('"+Convert.ToDateTime(txtReturnedDate.Text).ToShortDateString()+@"','MM/dd/yyyy'),'"+txtReturnedBy.Text+@"',to_number("+txtFineAmount.Text+"))");
             string msg=BLPBook.IssueBook(sql);
             btnIssueSubmit.Text = msg;
+            Response.Redirect("~/Default.aspx");
 
         }
     }

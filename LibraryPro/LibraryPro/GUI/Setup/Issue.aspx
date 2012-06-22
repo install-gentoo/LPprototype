@@ -23,7 +23,7 @@
                 <td>Issue Code:</td>
                 <td>
                     <asp:TextBox ID="txtIssueCode" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFiledValidator2" runat="server" ControlToValidate="txtIssueCode" Display="Dynamic" ErrorMessage="Please enter data."></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator0" runat="server" ControlToValidate="txtIssueCode" Display="Dynamic" ErrorMessage="Please enter data."></asp:RequiredFieldValidator>
 
                 </td>
             </tr>
@@ -107,9 +107,11 @@
                     <asp:TextBox ID="txtFineAmount" runat="server"></asp:TextBox>
                 </td>
             </tr>
-
-            <asp:Button ID="btnIssueSubmit" runat="server" Text="Submit" 
-                onlick="btnIssueSubmit_Click" onclick="btnIssueSubmit_Click"></asp:Button>
+            <tr>
+                <td>
+                    <asp:Button ID="btnIssueSubmit" runat="server" Text="Submit" onclick="btnIssueSubmit_Click"></asp:Button>
+                </td>
+            </tr>
         </table>
     </div>
 </asp:Content>

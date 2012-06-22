@@ -8,3 +8,8 @@ C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\bin\Debug\DBLibraryPro.pdb
 C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.dll
 C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.pdb
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\DBLibraryPro\bin\Debug\DBLibraryPro.dll
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\DBLibraryPro\bin\Debug\DBLibraryPro.pdb
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\DBLibraryPro\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.dll
+C:\Users\stech\Desktop\temp\LPprototype\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.pdb
