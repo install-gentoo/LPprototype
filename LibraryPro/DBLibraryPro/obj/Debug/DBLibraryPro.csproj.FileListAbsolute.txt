@@ -1,0 +1,10 @@
+G:\pp\LibraryPro\DBLibraryPro\bin\Debug\DBLibraryPro.dll
+G:\pp\LibraryPro\DBLibraryPro\bin\Debug\DBLibraryPro.pdb
+G:\pp\LibraryPro\DBLibraryPro\obj\Debug\ResolveAssemblyReference.cache
+G:\pp\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.dll
+G:\pp\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.pdb
+C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\bin\Debug\DBLibraryPro.dll
+C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\bin\Debug\DBLibraryPro.pdb
+C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.dll
+C:\Users\stech\Desktop\LibraryPro\DBLibraryPro\obj\Debug\DBLibraryPro.pdb

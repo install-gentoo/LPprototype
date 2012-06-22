@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LibraryPro.SiteMaster" %>
+
+<%
+    //check server connection
+    //fr testing only
+    Session["login_user"] = "Softech- Debug";
+    // testing code ends
+    //string user_name = "ram";
+    //Session["login_user"] = "";
+    try
+    {
+        if (Session["login_user"].Equals(""))
+        {
+
+            Response.Redirect("~/Login.aspx");
+        }   
+    }
+    catch
+    {
+        Response.Redirect("~/Login.aspx");
+    }
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>
+<asp:literal runat="server" Text="LibraryPro:"></asp:literal><asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder></title>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        <link href="css/Site.css" rel="stylesheet" type="text/css" />
+        <link type="text/css" href="css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            color: #FFCC00;
+        }
+        .style2
+        {
+            color: #669900;
+        }
+        .style3
+        {
+            color: #99CCFF;
+        }
+        .style4
+        {
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Library Pro
+                </h1>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                        <asp:MenuItem   NavigateUrl="~/About.aspx" Text="About" />
+                    </Items>
+                </asp:Menu>
+                <%--<div style=" height:auto; width:200px; float:right;> </div>--%>
+            </div>
+        </div>
+        <div class="main">
+            <div style="width: 200px; float: left;">
+                Welcome
+                <% Response.Write(Session["login_user"]);%>
+                <div id="accordion">
+                    <div>
+                        <h3>
+                            <a href="#">Setup </a>
+                        </h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/GUI/Setup/Category.aspx?act=list">Manage Category</asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/GUI/Setup/Publication.aspx?act=list">Manage Publication</asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/GUI/Setup/BookEdition.aspx?act=list">Manage Edition</asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/GUI/Setup/BookSource.aspx?act=list">Manage Source</asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/GUI/Setup/CardType.aspx?act=list">Manage Card Type</asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/GUI/Setup/MemberType.aspx?act=list">Manage Member Type</asp:HyperLink>
+                                </li>
+                                <%--<li>
+                                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/GUI/Setup/FinePolicy.aspx?act=list">Manage Fine Policy Type</asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/GUI/Setup/Member.aspx?act=list">Manage Member</asp:HyperLink>
+                                </li>--%>
+                                <%--<li>
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/GUI/Setup/BookInventory.aspx?act=list">Manage Inventory</asp:HyperLink>
+                                </li>--%>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>
+                                <a href="#">Cataloging</a></h3>
+                            <div>
+                                <ul>
+                                    <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/GUI/Setup/Book.aspx?act=list">Manage Book</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/GUI/Setup/BookLot.aspx?act=list">Manage Book Lot</asp:HyperLink></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Reports</a></h3>
+                        <div>
+                            <ul>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Setup</a></h3>
+                        <div>
+                            <ul>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                                <li>Menu one</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        // Accordion
+                        $("#accordion").accordion({ header: "h3" });
+                    });
+                </script>
+            </div>
+            <div style="width: 650px; float: left; margin-left: 10px;">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+        <div style="clear: both; height: 20px;">
+        </div>
+        <div class="footer">
+            <span class="style2">© Copyright: Softech Infosys Pvt. Ltd.</span><span class="style1">
+            </span><span class="style3"></span><span class="style4"><em>www.softechltd.com.np</em></span></div>
+    </div>
+    </form>
+</body>
+</html>
